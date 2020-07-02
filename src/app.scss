@@ -1,0 +1,55 @@
+body {
+  background: url('/pxfuel.jpg') no-repeat;
+  background-size: cover;
+  color: #2f2d33;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 60%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+
+  &:not(.gcash-picker) {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.question {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #464b4d;
+}
+
+.subtext {
+  color: #6b6675;
+  font-size: 0.8rem;
+}
+
+.conversion {
+  font-size: 1.5rem;
+}
